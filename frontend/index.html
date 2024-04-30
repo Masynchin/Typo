@@ -17,10 +17,10 @@
   <main>
     <h1>Hello from Typo!</h1>
     <button id="change">Different article</button>
-    <div id="editor"></div>
+    <div id="article"></div>
   </main>
   <script>
-    const editor = new EditorJS({
+    const articleEditor = new EditorJS({
       holder: "editor",
       tools: {
         header: Header,
@@ -48,7 +48,7 @@
     document.querySelector("#change").addEventListener("click", async (event) => {
       const response = await fetch("http://localhost:3000/api/random");
       const article = await response.json();
-      await editor.render(article);
+      await articleEditor.render(article);
     });
   </script>
 </body>
