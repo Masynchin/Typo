@@ -1,0 +1,22 @@
+name: Feature Request
+description: Feature Request for Typo.
+body:
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current state
+      description: What is the current behaviour?
+    validations:
+      required: true
+  - type: textarea
+    id: feature-request
+    attributes:
+      label: Feature request
+      description: What do you propose?
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation
+      description: Possible implementation of your propose
