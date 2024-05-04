@@ -12,6 +12,15 @@
   <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@2.8.1/dist/header.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@editorjs/paragraph@2.11.4/dist/paragraph.umd.min.js"></script>
   <style>
+    html {
+      background-color: var(--bg-light);
+      font-family: sans-serif;
+    }
+
+    main {
+      padding: 32px;
+    }
+
     .pane {
       display: grid;
       grid-template-columns: calc(50% - 15px) calc(50% - 15px);
@@ -21,7 +30,6 @@
 
 <body>
   <main>
-    <h1>Hello from Typo!</h1>
     <button id="change">Different article</button>
     <div class="pane">
       <div id="article"></div>
